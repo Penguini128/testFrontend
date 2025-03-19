@@ -31,6 +31,7 @@ const App = () => {
             setInput("");
         } catch (error) {
             console.error("Error:", error);
+            speak({ text: "Failed to fetch response. Please try again." });
             setError("Failed to fetch response. Please try again.");
             setResponse("");
         }
